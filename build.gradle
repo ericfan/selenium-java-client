@@ -1,0 +1,33 @@
+apply plugin: 'java'
+
+group = 'org.selenium'
+version = '1.0.0-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+	compile group: 'com.google.code.gson', name: 'gson', version: '2.8.1'
+	compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.4'
+	compile group: 'com.google.guava', name: 'guava', version: '23.0'
+	compile group: 'org.hamcrest', name: 'hamcrest-all', version: '1.3'
+	compile group: 'org.apache.commons', name: 'commons-exec', version: '1.3'
+	compile group: 'com.squareup.okhttp3', name: 'okhttp', version: '3.9.1'
+	compile group: 'org.testng', name: 'testng', version: '6.13.1'
+	compile group: 'net.bytebuddy', name: 'byte-buddy', version: '1.7.6'
+
+	compile group: 'com.github.javaparser', name: 'javaparser-core', version: '3.5.6'
+
+	testCompile group: 'javax.servlet', name: 'javax.servlet-api', version: '3.1.0'
+	testCompile group: 'junit', name: 'junit', version: '4.12'
+	testCompile group: 'org.mockito', name: 'mockito-core', version: '2.11.0'
+	testCompile group: 'net.sourceforge.htmlunit', name: 'htmlunit', version: '2.28'
+	testCompile group: 'org.seleniumhq.selenium', name: 'htmlunit-driver', version: '2.29.3'
+	testCompile group: 'org.seleniumhq.selenium', name: 'selenium-server', version: '3.11.0'
+	testCompile group: 'org.littleshoot', name: 'littleproxy', version: '1.1.2'
+	testCompile group: 'org.eclipse.mylyn.github', name: 'org.eclipse.egit.github.core', version: '2.1.5'
+
+}
